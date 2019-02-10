@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 14px/12px;
+}
+body{
+    background-color: #f2f2f2;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(68,68,68);
+    /* margin-bottom: 10px; */
+    position: absolute;
+}
+main{
+    width: 1200px;
+    height: 1000px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    font-size: 0;
+}
+main > .head{
+    position: relative;
+    height: 40px;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+    z-index: 3;
+}
+main > .head > .left,
+main > .head > .login{
+    text-align: center;
+    line-height: 40px;
+}
+main > .head > .left a,
+main > .head > .login > li a{
+    color: #fff;
+    font-size: 18px;
+}
+main > .head > .left a{
+    text-decoration: none;
+    margin-right: 15px;
+    float: left;
+}
+main > .head > .login > li{
+    float: right;
+    width: 58px;
+    list-style: none;
+}
+main > .head > .login > li a:hover{
+    background: #fff;
+    color: #444;
+}
+main > .head > .login > li a{
+    display: block;
+    width: 58px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 14px;
+}
+main > .navbar{
+   height: 48px;
+   box-shadow:  0 1px 2px 0 rgba(0,0,0,.24),
+                0 0 2px 0 rgba(0,0,0,.12);
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+main > .navbar ul{
+    text-align: center;
+    line-height: 48px;
+    font-size: 15px;
+}
+main > .navbar ul li{
+    list-style: none;
+    float: left;
+    width: 120px;
+    height: 48px;
+}
+main > .navbar ul li a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.5s;
+}
+main > .navbar ul li a:hover{
+    /* font-weight: bold; */
+    color: black;
+    background-color:gray;
+}
+main > .container{
+    padding-top: 5px;
+}
+main > .container > .sidebar{
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.24),
+                0   0 2px 0 rgba(0,0,0,.12);
+    width: 228px;
+    height: 1442px;
+    /* border: 1px solid black; */
+    float: left;
+    margin-right: 12px;
+}
+main > .container > .sidebar > .card{
+    text-align: left;
+}
+main > .container > .sidebar > .card h3{
+    font-size: 15px;
+    font-weight: 700;
+    height: 24px;
+    width: 198px;
+    padding: 10px 15px;
+    /* line-height: 45px; */
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadada;
+}
+main > .container > .sidebar > .card ul > li{
+    list-style: none;
+    /* padding: 5px 0 5px 15px; */
+    border-bottom: 1px solid #f2f2f2;
+}
+main > .container > .sidebar > .card ul > li a{
+    display: block;
+    width: 213px;
+    height: 20px;
+    padding: 5px 0 5px 15px;
+    font-size: 14px;
+    color: #07d;
+    text-decoration: none;
+}
+main > .container > .sidebar > .card ul > li a:hover{
+    background-color: #f2f2f2;
+}
+
+main > .container .content{
+    height: 1418px;
+    /* border: 1px solid black; */
+    float: left;
+    padding: 12px 12px;
+    background-color: #fff;
+}
+.masterMission > .row{
+    display: block;
+    width: 635px;
+    background-color: #fff;
+    /* font-size: 0; */
+}
+.primary{
+    background-color: #e6eaeb;
+    color: #5185ad;
+    border: 1px solid #d7d7d7;
+    font-weight: 500;
+    width: 618px;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+.masterMission .row .bonus{
+    display: inline-block;
+    width: 124px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    font-size: 14px;
+}
+.masterMission .row .substance{
+    display: inline-block;
+    width: 475px;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.dailyMission{
+    height: 814px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.dailyMission .dropped,
+.dailyMission .name,
+.dailyMission .day{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+}
+.dailyMission .day{
+    width: 124px;
+    padding: 8px;
+}
+.dailyMission .name{
+    width: 194px;
+    padding: 8px;
+}
+.dailyMission .dropped{
+    width: 263px ;
+    padding: 8px;
+}
+
+.dailyMission > .week,
+.dailyMission > .copyName,
+.dailyMission > .dropObjects{
+    float: left;
+}
+.dailyMission > .week .weekDay{
+    width: 124px;
+    height: 94px;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    text-align: center;
+    line-height: 94px;
+}
+.dailyMission > .copyName .copy{
+    width: 194px;
+    height: 19.3px;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19.3px;
+}
+.dailyMission > .dropObjects .object{
+    width: 266px;
+    height: 19.3px;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    text-align: center;
+    line-height: 19.3px;
+}
+
+main .container .info{
+    height: 1442px;
+    width: 288px;
+    /* border: 1px solid black; */
+    float: left;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.info .gameIntro{
+    height: 386px;
+    border-bottom: 1px solid black;
+}
+.info .gameIntro .officialWeb{
+    margin: 10px;
+    height: 251px;
+}
+.officialWeb .logo img{
+    width: 100px;
+    height: 100px;
+    margin:0 10px;
+    border-radius: 18px;
+    float: left;
+}
+.officialWeb .logo p{
+    float: left;
+    font-size: 12px;;
+    margin: 5px 0;
+}
+.star {
+    display: inline-block;
+    background: url("../img/sslc_pg.png") no-repeat;
+    background-position: -99px -160px;
+    width: 76px;
+    height: 13px;
+}
+.officialWeb .logo p a{
+    display: block;
+    width: 118px;
+    height: 30px;
+    padding: 0 12px;
+    background-color: #00a8e6;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.domestic{
+    clear: left;
+    height: 20px;
+    padding: 3px 0;
+}
+.domestic span{
+    font-size: 14px;
+    padding-left: 20px;
+}
+.domestic a{
+    text-decoration: none;
+    padding-left: 40px;
+    color: #07d;
+}
+.domestic a:hover{
+    text-decoration: underline;
+}
+.introduction{
+    clear: both;
+    padding: 10px;
+    text-indent: 2rem;
+    font-size: 14px;
+    line-height: 20px;
+}
+.clients *{
+    /* clear: both; */
+    font-size: 14px;
+}
+.clients h5{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin: 5px 0;
+    text-align: center;
+}
+.clients a{
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    width: 91px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: #00a8e6;
+    padding: 0 12px;
+    margin-left: 20px;
+}
+
+.newServant{
+    height: 376px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+.newServant h3{
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #dadada;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+.newServant ul li{
+    list-style: none;
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.newServant ul li img{
+    width: 100%;
+}
+
+footer{
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-size: 11px;
+    text-align: center;
+    line-height: 16px;
+    color: #999;
+}
+footer a{
+    text-decoration: none;
+    color: #07d;
+}
+.fgoWiki{
+    color: #999;
+    margin-right: 20px;
+}
